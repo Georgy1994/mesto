@@ -35,12 +35,10 @@
 /*end footer*/
 
 /*start popap*/
-@import url(..//blocks/popap/popap.css);
-@import url(..//blocks/popap/__close/popap__close.css);
-@import url(..//blocks/popap/__form/popap__form.css);
-@import url(..//blocks/popap/__input/popap__input.css);
-@import url(..//blocks/popap/__name/popap__name.css);
-@import url(..//blocks/popap/__save/popap__save.css);
-@import url(..//blocks/popap/__wraper/popap__wraper.css);
+@import url(..//blocks/popap/popup.css);
+@import url(..//blocks/popap/__close/popup__close.css);
+@import url(..//blocks/popap/__form/popup__form.css);
+@import url(..//blocks/popap/__input/popup__input.css);
+@import url(..//blocks/);
 /*end popap*/
 

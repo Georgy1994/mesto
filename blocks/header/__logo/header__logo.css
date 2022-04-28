@@ -3,6 +3,8 @@
     background-repeat: no-repeat;
     min-height: 33px;
     margin: 0;
+    width: 142px;
+    height: 33px;
 }
 
 @media screen and  (max-width: 900px) {

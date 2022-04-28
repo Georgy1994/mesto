@@ -1,4 +1,4 @@
-.popap {
+.popup {
     display: none;
     width: 100%;
     height: 100%;
@@ -9,6 +9,6 @@
     background-color: rgba(0, 0, 0, .6);
 }
 
-.popap.active {
+.active {
     display: block;
 } /* этот класс работает в связке с JS*/

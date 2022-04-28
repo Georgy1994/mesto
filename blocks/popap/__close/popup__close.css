@@ -1,4 +1,4 @@
-.popap__close {
+.popup__close {
     background-image: url(../../../images/Close_Icon.svg);
     background-repeat: no-repeat;
     background-color: transparent;
@@ -14,13 +14,13 @@
     transition: .8s ease-in-out;
 }
 
-.popap__close:hover {
+.popup__close:hover {
     opacity: 0.6;
     transform:  rotate(180deg);
 }
 
 @media screen and (max-width: 590px) {
-    .popap__close {
+    .popup__close {
         width: 20px;
         height: 20px;
         top: -30px;

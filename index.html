@@ -12,7 +12,6 @@
     <div class="page">
         <header class="header">
             <div class="header__logo"></div>
-            <div class="header__line"></div>
         </header>
         <main>
             <section class="profile">
@@ -75,17 +74,17 @@
     </div>
 
 <!--Попап редактирования профиля-->
-    <div class="popap">
-        <div class="popap__wraper">
-            <form action="#" class="popap__form">
-                <p class="popap__name">Редактировать профиль</p>
-                <input class="popap__input popap__input_name" type="text" placeholder="Ваше имя">
-                <input class="popap__input popap__input_profession" type="text" placeholder="Ваш род занятий">
-                <button class="popap__save">Сохранить</button>
-                <button class="popap__close"></button>
+    <div class="popup">
+        <div class="popup__wraper">
+            <form action="#" class="popup__form">
+                <p class="popup__name">Редактировать профиль</p>
+                <input name="name" class="popup__input popup__input_name" type="text" placeholder="Ваше имя" maxlength="30">
+                <input name="profession" class="popup__input popup__input_profession" type="text" placeholder="Ваш род занятий" maxlength="30">
+                <button class="popup__save">Сохранить</button>
+                <button class="popup__close"></button>
             </form>
         </div>
     </div>
-<script src="./script/script.js"></script>
+<script src="./script/index.js"></script>
 </body>
 </html>
