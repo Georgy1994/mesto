@@ -26,8 +26,8 @@ like.addEventListener /*в ответ на действие*/  ('click', functio
 let formElement = document.querySelector ('.popap__form'); // Воспользуйтесь методом querySelector()
 
 // Находим поля формы в DOM
-let nameInput = document.querySelector ('.popap__input_name'); // это поле в форме
-let jobInput = document.querySelector ('.popap__input_profession'); // это поле в форме
+let nameInput = document.querySelector ('.popap__input_name'); // это поле в попапе
+let jobInput = document.querySelector ('.popap__input_profession'); // это поле в попапе
 let profileTitle = document.querySelector ('.profile__title'); // это поле в профиле
 let profileSubtitle = document.querySelector('.profile__subtitle') // это поле в профиле
 
@@ -40,16 +40,10 @@ function formSubmitHandler (evt) {
         nameInput.value; //то что я ввожу в форме // получаю значения 
         jobInput.value; //то что я ввожу в форме
 
-        profileTitle.textContent = nameInput.value;
-        profileSubtitle.textContent  = jobInput.value;
+        profileTitle.textContent = nameInput.value; // текст в профиле = тексту которое ввели в попапе
+        profileSubtitle.textContent = jobInput.value;// текст в профиле = тексту которое ввели в попапе
 
-        popap.classList.remove /*удаляем класс*/('active'); /* При нажатии на крестик класс "active" убирается */
-
-    // Получите значение полей jobInput и nameInput из свойства value
-
-    // Выберите элементы, куда должны быть вставлены значения полей
-
-    // Вставьте новые значения с помощью textContent
+        popap.classList.remove /*удаляем класс*/('active'); /*закрываем попап после заполнения*/
 }
 // Прикрепляем обработчик к форме:
 // он будет следить за событием “submit” - «отправка»
