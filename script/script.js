@@ -29,7 +29,7 @@ let formElement = document.querySelector ('.popap__form'); // Воспользу
 let nameInput = document.querySelector ('.popap__input_name'); // это поле в форме
 let jobInput = document.querySelector ('.popap__input_profession'); // это поле в форме
 let profileTitle = document.querySelector ('.profile__title'); // это поле в профиле
-let profileSubtitle = document.querySelector('.profile__subtitle') // это полке в профиле
+let profileSubtitle = document.querySelector('.profile__subtitle') // это поле в профиле
 
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет
