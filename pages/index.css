@@ -1,0 +1,39 @@
+@import url(..//vendor/fonts.css);
+@import url(..//blocks/page/page.css);
+@import url(..//blocks/body/body.css);
+
+/*start header*/
+@import url(..//blocks/header/header.css);
+@import url(..//blocks/header/header__logo/header__logo.css);
+@import url(..//blocks/header/header__line/header__line.css);
+/*end header*/
+
+/*start profile*/
+@import url(..//blocks/profile/profile.css);
+@import url(..//blocks/profile/__button-name/profile__button-name.css);
+@import url(..//blocks/profile/__button/profile__button.css);
+@import url(..//blocks/profile/__info/profile__info.css);
+@import url(..//blocks/profile/__subtitle/profile__subtitle.css);
+@import url(..//blocks/profile/__title/profile__title.css);
+/*end profile*/
+
+
+/*start cards*/
+@import url(..//blocks/cards/cards.css);
+/*end cards*/
+
+/*start card*/
+@import url(..//blocks/card/card.css);
+@import url(..//blocks/card/__button/card__button-like.css);
+@import url(..//blocks/card/__elements/card__elements.css);
+@import url(..//blocks/card/__title/card__title.css );
+/*end card*/
+
+/*start footer*/
+@import url(..//blocks/footer/footer.css);
+@import url(..//blocks/footer/__text/footer__text.css);
+/*end footer*/
+
+/*popap footer*/
+@import url(..//blocks/popap/popap.css);
+/*popap footer*/

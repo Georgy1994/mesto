@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="./pages/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Инста нашего времени">
+    <title>Mesto-Russia</title>
+</head>
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <div class="header__logo"></div>
+            <div class="header__line"></div>
+        </header>
+        <main>
+            <section class="profile">
+                <img src="./images/Avatar.png" alt="Аватар" class="avatar">
+                <div class="profile__info">
+                    <h1 class="profile__title"></h1>
+                    <p class="profile__subtitle"></p>
+                    <button type="button" class="profile__button-name" title="Редактировать профиль"></button>
+                </div>
+                    <button type="button" class="profile__button" title=""></button>
+            </section>
+            <section class="cards">
+                <div class="card">
+                    <img src="./images/karachevsk.png" alt="Карачаевск" class="card__img">
+                    <div class="card__elements">
+                        <h2 class="card__title">Карачаевск</h2>
+                        <button type="button" class="card__button-like"></button>
+                    </div> 
+                </div>
+                <div class="card">
+                    <img src="./images/gora.png" alt="Гора Эльбрус" class="card__img">
+                    <div class="card__elements">
+                        <h2 class="card__title">Гора Эльбрус</h2>
+                        <button type="button" class="card__button-like"></button>
+                    </div> 
+                </div>
+                <div class="card">
+                    <img src="./images/dombai.png" alt="Домбай" class="card__img">
+                    <div class="card__elements">
+                        <h2 class="card__title">Домбай</h2>
+                        <button class="card__button-like"></button>
+                    </div> 
+                </div>
+                <div class="card">
+                    <img src="./images/gora.png" alt="Гора Эльбрус" class="card__img">
+                    <div class="card__elements">
+                        <h2 class="card__title">Гора Эльбрус</h2>
+                        <button type="button" class="card__button-like"></button>
+                    </div> 
+                </div>
+                <div class="card">
+                    <img src="./images/dombai.png" alt="Домбай" class="card__img">
+                    <div class="card__elements">
+                        <h2 class="card__title">Домбай</h2>
+                        <button class="card__button-like"></button>
+                    </div> 
+                </div>
+                <div class="card">
+                    <img src="./images/karachevsk.png" alt="Карачаевск" class="card__img">
+                    <div class="card__elements">
+                        <h2 class="card__title">Карачаевск</h2>
+                        <button type="button" class="card__button-like"></button>
+                    </div> 
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">© 2022 Mesto Russia</p>
+        </footer>
+    </div>
+
+<!--Попап редактирования профиля-->
+    <div class="popap">
+        <div class="popap__wraper">
+            <form action="" class="popap__form">
+                <p class="popap__name">Редактировать профиль</p>
+                <input class="popap__input popap__input_name" type="text" placeholder="Ваше имя">
+                <input class="popap__input popap__input_profession" type="text" placeholder="Ваш род занятий">
+                <button class="popap__save">Сохранить</button>
+                <button class="popap__close"></button>
+            </form>
+        </div>
+    </div>
+<script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.profile__button {
+    background-image: url(../../../images/button_info.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0 0 0 244px;
+    transition: 0.3s linear;
+}
+
+.profile__button:hover {
+    opacity: 0.6;
+}
+
+@media screen and  (max-width: 900px) {
+    .profile__button {
+        width: 282px;
+        margin: 36px 0 0 0;
+    }
+}
