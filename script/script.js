@@ -17,13 +17,13 @@ closePopap.addEventListener ('click', () => {
 const like = document.querySelector('.card__button-like'); // обявляем переменную для лайка
 
 // События для поставки лайка 
-like.addEventListener ('click', function(i) {
+like.addEventListener /*в ответ на действие*/  ('click', function(i) {
     like.classList.add/*присваиваем класс*/ ('active__like'); // при нажатии ставиться лайк (заливка)
 });
 
 //______________________________________________________________//
 
-let formElement = document.querySelector ('.profile__info'); // Воспользуйтесь методом querySelector()
+let formElement = document.querySelector ('.popap__form'); // Воспользуйтесь методом querySelector()
 
 // Находим поля формы в DOM
 let nameInput = document.querySelector ('.popap__input_name'); // это поле в форме
@@ -36,11 +36,14 @@ let profileSubtitle = document.querySelector('.profile__subtitle') // это п�
 function formSubmitHandler (evt) {
     evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
 
-        nameInput.textContent = 'имя'; //то что я ввожу в форме
-        jobInput.textContent  = 'проф'; //то что я ввожу в форме
+        console.log (nameInput.value); // когда () что то делаю
+        nameInput.value; //то что я ввожу в форме // получаю значения 
+        jobInput.value; //то что я ввожу в форме
 
-        profileTitle.textContent = 'имя'; //то что я ввожу в форме
-        profileSubtitle.textContent  = 'проф'; //то что я ввожу в форме
+        profileTitle.textContent = nameInput.value;
+        profileSubtitle.textContent  = jobInput.value;
+
+        popap.classList.remove /*удаляем класс*/('active'); /* При нажатии на крестик класс "active" убирается */
 
     // Получите значение полей jobInput и nameInput из свойства value
 

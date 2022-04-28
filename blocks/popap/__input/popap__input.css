@@ -1,0 +1,26 @@
+.popap__input {
+    display: block;
+    padding-bottom: 13px;
+    width: 358px;
+    margin: 30px auto 0;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.popap__input:nth-child(2) {
+    margin-top: 56px;
+}
+
+@media screen and (max-width: 590px) {
+    .popap__input {
+        width: 238px;
+        margin: 30px auto 0;
+    }
+    .popap__input:nth-child(2) {
+        margin-top: 75px;
+    }
+}
+
+.popap__input:focus {
+    outline: none;
+}
