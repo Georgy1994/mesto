@@ -4,8 +4,10 @@ const popup = document.querySelector('.popup'); // обявляем переме
 
 //______________________________________________________________//
 // События для вызова модалки и ее закрытия  
-openPopup.addEventListener ('click', function(i) { /* отследили клик*/
-    popup.classList.add/*присваиваем класс*/ ('popup_opened'); /* повеслил класс на форму*/
+openPopup.addEventListener ('click', function togglePopup() {
+    nameInput.value = profileTitle.textContent;
+    jobInput.value = profileSubtitle.textContent;
+    popup.classList.toggle('popup_opened');
 });
 
 closePopup.addEventListener ('click', () => {
@@ -32,6 +34,8 @@ function togglePopup() {
     jobInput.value = profileSubtitle.textContent;
     popup.classList.toggle('popup_opened');
 }
+
+formElement.addEventListener('submit', togglePopup);
 
 function formSubmitHandler (evt) {
     evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
