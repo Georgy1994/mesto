@@ -29,14 +29,6 @@ console.log(profileSubtitle);
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет
 
-function togglePopup() {
-    nameInput.value = profileTitle.textContent;
-    jobInput.value = profileSubtitle.textContent;
-    popup.classList.toggle('popup_opened');
-}
-
-formElement.addEventListener('submit', togglePopup);
-
 function formSubmitHandler (evt) {
     evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
 

@@ -1,5 +1,5 @@
 # Практическая работа № 4 Mesto-Russia
-[Посмотреть работу](https://georgy1994.github.io/mesto-russia/) 
+[Посмотреть работу](https://georgy1994.github.io/mesto/) 
 ______
 
 ## Сервис по обмену фотографиями
