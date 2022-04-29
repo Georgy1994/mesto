@@ -13,7 +13,3 @@
 .card__button-like:hover {
     opacity: 0.5;
 }
-
-.active__like {
-    background-image: url(../../../images/like_black.svg);
-}

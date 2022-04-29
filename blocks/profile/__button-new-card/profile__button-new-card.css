@@ -1,4 +1,4 @@
-.profile__button {
+.profile__button-new-card {
     background-image: url(../../../images/button_info.svg);
     background-repeat: no-repeat;
     background-color: transparent;
@@ -13,13 +13,13 @@
     transition: 0.3s linear;
 }
 
-.profile__button:hover {
+.profile__button-new-card:hover {
     opacity: 0.6;
 }
 
 @media screen and  (max-width: 900px) {
-    .profile__button {
-        width: 282px;
+    .profile__button-new-card {
+        width: 100%;
         margin: 36px 0 0 0;
     }
 }
