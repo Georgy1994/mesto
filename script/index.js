@@ -22,9 +22,9 @@ let formElement = document.querySelector ('.popup__form'); // Воспользу
 let nameInput = document.querySelector ('.popup__input_name'); // это поле в попапе
 let jobInput = document.querySelector ('.popup__input_profession'); // это поле в попапе
 let profileTitle = document.querySelector ('.profile__title'); // это поле в профиле
-console.log(profileTitle);
+
 let profileSubtitle = document.querySelector('.profile__subtitle') // это поле в профиле
-console.log(profileSubtitle);
+
 
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет

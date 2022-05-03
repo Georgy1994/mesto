@@ -1,5 +1,23 @@
 .popup__wraper {
+    /*
     display: flex;
     width: 100%;
     height: 100%;
+    */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 15%);
+    box-sizing: border-box;
+    color: #000;
+    max-width: 430px;
+    padding: 34px 36px 37px;
+    position: fixed;
+    width: 100%;
+}
+
+@media screen and (max-width: 590px) {
+    .popup__wraper {
+        width: 282px;
+        padding: 25px 22px;
+    }
 }

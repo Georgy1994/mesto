@@ -1,13 +1,13 @@
 .popup__input {
     display: block;
-    padding-bottom: 13px;
+    padding: 0 0 13px 0;
     width: 358px;
     margin: 30px auto 0;
     border: none;
     border-bottom: 1px solid #000000;
 }
 
-.popup__input:nth-child(2) {
+.popup__input:nth-child(1) {
     margin-top: 54px;
 }
 
@@ -16,7 +16,7 @@
         width: 238px;
         margin: 30px auto 0;
     }
-    .popup__input:nth-child(2) {
+    .popup__input:nth-child(1) {
         margin-top: 75px;
     }
 }
