@@ -45,5 +45,17 @@
 @import url(..//blocks/popup/__name/popup__name.css);
 @import url(..//blocks/popup/__save/popup__save.css);
 @import url(..//blocks/popup/__wraper/popup__wraper.css);
+@import url(..//blocks/popup/__illustration/popup__illustration.css);
+@import url(..//blocks/popup/__image/popup__image.css);
+@import url(..//blocks/popup/__subtitle/popup__subtitle.css);
 /*end popup*/
 
+/*start element*/
+@import url(../blocks/element/element.css);
+@import url(../blocks/element/__image/element__image.css);
+@import url(../blocks/element/__description/element__description.css);
+@import url(../blocks/element/__title/element__title.css);
+@import url(../blocks/element/__like/element__like.css);
+@import url(../blocks/element/__like/_active/element__like_active.css);
+@import url(../blocks/element/__delete/element__delete.css);
+/*end element*/
