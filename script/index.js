@@ -50,15 +50,15 @@ const popupFullPhotoSubtitle = popupFullPhoto.querySelector('.popup__subtitle');
 
 
 //Общая переменная для ВСЕХ попапов
-const popupAny = document.querySelector('.popup');
+/*const popupAny = document.querySelector('.popup');*/
 
 //Переменные для формы профиля
-const openPopupProfile = document.querySelector('.profile__button-name'); // объявляем переменную для кнопки открытия профиля
+const popupOpenProfile = document.querySelector('.profile__button-name'); // объявляем переменную для кнопки открытия профиля
 const popupProfile = document.querySelector('.popup_change-profile'); // обявляем переменную для названия попапа профиля
 const popupProfileForm = document.querySelector('.popup__wraper'); // переменная обертки попапа
 const popupProfileNameInput = popupProfileForm.querySelector('.popup__input_name'); //переменная поля имени
 const popupProfileAboutTextInput = popupProfileForm.querySelector('.popup__input_profession');// переменная род занятия 
-const closePopup = document.querySelector('.popup__close'); // объявляем переменную для крестика (закрытия формы)
+const popupCloseForm = document.querySelector('.popup__close'); // объявляем переменную для крестика (закрытия формы)
 const profileName = document.querySelector('.profile__title'); //переменная для имени профиля
 const profileAboutText = document.querySelector('.profile__subtitle');//пременная для текста профиля 
 //______________________________________________________________//
@@ -120,14 +120,14 @@ function submitPopupNewItemFormHandler(evt) {
     evt.preventDefault();
     const newElementItem = createElement({ name: popupNewItemTitleInput.value, link: popupNewItemSrcInput.value });
     addUserElement(newElementItem);
-    popupClose(popupNewItem);
+    closePopup(popupNewItem);
     popupNewItemForm.reset();
 }
 //______________________________________________________________//
 
 //открытие попапа фото и внесения данных
 function expandPhotoHandler({ name, link }) {
-    popupOpen(popupFullPhoto);
+    openPopup(popupFullPhoto);
     popupFullPhotoItem.src = link;
     popupFullPhotoItem.alt = name;
     popupFullPhotoSubtitle.textContent = name;
@@ -139,27 +139,27 @@ function submitPopupProfileFormHandler(evt) {
     evt.preventDefault();
     profileName.textContent = popupProfileNameInput.value;
     profileAboutText.textContent = popupProfileAboutTextInput.value;
-    popupClose(popupProfile);
+    closePopup(popupProfile);
 }
 //______________________________________________________________//
 
 
 // функции для открытия и закрытия всех попапов
-function popupOpen(popupAny) {
+function openPopup (popupAny) {
     popupAny.classList.add('popup_opened');
 }
-function popupClose(popupAny) {
+function /*popupClose*/ closePopup(popupAny) {
     popupAny.classList.remove('popup_opened');
 }
 
 //______________________________________________________________//
 //слушатель вызова функции открытия попапа добавления ФОТО пользователя
 popupNewItemBtn.addEventListener('click', function () {
-    popupOpen(popupNewItem);
+    openPopup(popupNewItem);
 });
 //слушатель вызова функции закрытия попапа добавления ФОТО пользователя
 popupNewItemCloseBtn.addEventListener('click', function () {
-    popupClose(popupNewItem);
+    closePopup(popupNewItem);
 });
 //слушатель вызова функции добавления карточки пользователя
 popupNewItemForm.addEventListener('submit', submitPopupNewItemFormHandler);
@@ -168,21 +168,22 @@ popupNewItemForm.addEventListener('submit', submitPopupNewItemFormHandler);
 
 //слушатель вызова функции ЗАКРЫТИЯ попапа ПОЛНОГО ОТКРЫТИЯ фото
 popupFullPhotoCloseBtn.addEventListener('click', function () {
-    popupClose(popupFullPhoto);
+    closePopup(popupFullPhoto);
 });
 //______________________________________________________________//
 
 
 
 //слушатель вызова функции открытия попапа редактирования профиля
-openPopupProfile.addEventListener('click', function () {
-    popupOpen(popupProfile);
+popupOpenProfile.addEventListener('click', function () {
+    openPopup(popupProfile);
     popupProfileNameInput.value = profileName.textContent;
     popupProfileAboutTextInput.value = profileAboutText.textContent;
 });
 // слушатель вызова функции закрытия попапа редактирования профиля
-closePopup.addEventListener('click', function () {
-    popupClose(popupProfile);
+popupCloseForm.addEventListener('click', function () {
+    closePopup(popupProfile);
 });
 //слушатель вызова функции редактирования профиля
 popupProfileForm.addEventListener('submit', submitPopupProfileFormHandler);
+/**/
