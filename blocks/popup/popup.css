@@ -1,5 +1,7 @@
 .popup {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
     bottom: 0;
@@ -9,6 +11,7 @@
     font-family: Inter,Arial,Helvetica,sans-serif;
     position: fixed;
     background-color: rgba(0, 0, 0, .6);
+    transition: visibility, 0.5s ease-in-out;
     /*
     display: none;
     width: 100%;

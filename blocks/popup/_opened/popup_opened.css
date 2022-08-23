@@ -1,3 +1,4 @@
 .popup_opened {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
 } /* этот класс работает в связке с JS*/
