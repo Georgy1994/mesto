@@ -66,7 +66,7 @@ const enableValidation = (validCofig) => {
     const formList = Array.from(document.querySelectorAll(`.${formSelector}`));
     formList.forEach((formElement) => {
         formElement.addEventListener("submit", (evt) => {
-            evt.preventDefault();
+           /* evt.preventDefault();*/
         });
         setEventListeners(formElement, validCofig);
     });
