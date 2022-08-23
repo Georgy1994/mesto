@@ -79,9 +79,6 @@ function closePopup(popupAny) {
     popupAny.removeEventListener('click', handleOverlayClose);
 }
 
-console.log(openPopup);
-console.log(closePopup);
-
 //______________________________________________________________//
 //открытие попапа с фото
 function handleImageClick({ name, link }) {
@@ -105,7 +102,7 @@ function createElement({ name, link }) {
     elementPhoto.alt = name;
     elementDeleteBtn.addEventListener('click', handleElementDeleteBtn);
     elementLikeBtn.addEventListener('click', handleElementLikeBtn);
-    elementPhoto.addEventListener('click', () => expandPhotoHandler({ name, link }));
+    elementPhoto.addEventListener('click', () => handleImageClick({ name, link }));
     return element;
 }
 //______________________________________________________________//

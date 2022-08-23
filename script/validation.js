@@ -15,10 +15,12 @@ const showInputError = (formElement, inputElement, errorMessage, inputErrorClass
 };
 
 const hideInputError = (formElement, inputElement, inputErrorClass, errorClass) => {
-    const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
+    const errorElement = formElement.querySelector(`.${inputElement.id}-error`)
+    if (errorElement !== /*не равно*/ null) {
+        errorElement.textContent = "";
+        errorElement.classList.remove(errorClass);
+    };
     inputElement.classList.remove(inputErrorClass);
-    errorElement.textContent = "";
-    errorElement.classList.remove(errorClass);
 };
 
 const checkInputValidity = (formElement, inputElement, inputErrorClass, errorClass) => {
